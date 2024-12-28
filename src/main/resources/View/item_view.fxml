@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="532.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ItemController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bcbdd4" height="532.0" stroke="BLACK" strokeType="INSIDE" width="848.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#330404" height="66.0" layoutX="8.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="829.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0a2238" height="77.0" layoutX="9.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 50;" width="829.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="6.0" prefHeight="66.0" prefWidth="792.0" text="Item Form" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAdd" layoutX="648.0" layoutY="172.0" onAction="#btnAdd" prefHeight="37.0" prefWidth="139.0" style="-fx-background-color: #16a085;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="240.0" layoutY="171.0" onAction="#btnDelete" prefHeight="37.0" prefWidth="139.0" style="-fx-background-color: #eb4d4b;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="458.0" layoutY="171.0" onAction="#btnUpdate" prefHeight="37.0" prefWidth="139.0" style="-fx-background-color: #833471;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></JFXButton>
+      <TableView fx:id="tlbItem" layoutX="10.0" layoutY="220.0" prefHeight="306.0" prefWidth="829.0">
+         <columns>
+            <TableColumn fx:id="tlbCode" prefWidth="140.800048828125" text="Code" />
+            <TableColumn fx:id="tlbDes" prefWidth="303.199951171875" text="Description" />
+            <TableColumn fx:id="tlbPrice" prefWidth="136.0" text="Unit Price" />
+            <TableColumn fx:id="tlbQTY" prefWidth="188.0" text="QTY ON Hand" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="txtDes" alignment="CENTER" layoutX="204.0" layoutY="107.0" prefHeight="27.0" prefWidth="213.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtPrice" alignment="CENTER" layoutX="437.0" layoutY="106.0" prefHeight="27.0" prefWidth="182.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtQtyOnHAnd" alignment="CENTER" layoutX="638.0" layoutY="106.0" prefHeight="27.0" prefWidth="182.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtCode" alignment="CENTER" layoutX="23.0" layoutY="107.0" onAction="#txtCodeAction" prefHeight="27.0" prefWidth="165.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <JFXButton fx:id="btnSearch" layoutX="28.0" layoutY="172.0" onAction="#btnSearch" prefHeight="37.0" prefWidth="139.0" style="-fx-background-color: #5758BB;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="53.0" layoutY="81.0" prefHeight="18.0" prefWidth="90.0" text="Code" textAlignment="CENTER" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="265.0" layoutY="81.0" prefHeight="18.0" prefWidth="90.0" text="Description" textAlignment="CENTER" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="473.0" layoutY="81.0" prefHeight="18.0" prefWidth="90.0" text="Unit Price" textAlignment="CENTER" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="667.0" layoutY="81.0" prefHeight="20.0" prefWidth="102.0" text="QTY ON Hand" textAlignment="CENTER" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
